@@ -8,6 +8,8 @@
 
 ->이미지 전처리 과정(chatbot-preprocess.py)
 
+
+
 6일차실습:
 
 CIFAR-10데이터를 사용하여 3~4개의 class를 분류하는 model을 트레이닝하기
@@ -16,6 +18,8 @@ CIFAR-10데이터를 사용하여 3~4개의 class를 분류하는 model을 트�
 
 ->트레이닝&테스트(cnn.py)
 
+
+
 6일차과제1:
 
 CIFAR-10데이터를 사용하여 10개의 class를 분류하는 model을 트레이닝하기
@@ -23,6 +27,8 @@ CIFAR-10데이터를 사용하여 10개의 class를 분류하는 model을 트레
 ->데이터 다운로드(10-download_cifar.py)
 
 ->트레이닝&테스트(10-cnn.py)
+
+
 
 6일차선택과제2:
 
