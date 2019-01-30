@@ -4,10 +4,11 @@ import cv2
 path_1 = "image/zz" #collected image class 1
 path_2 = "image/zb" #collected image class 2
 path_3 = "image/ts" #collected image class 3
-path_t="data" #save preprocessed images
+path_t="data" #save renamed images
 
 id=0
 IMG_SIZE = 32
+# rename as 0_*.jpg, 1_*.jpg, 2_*.jpg
 # for (path, dirs, files) in os.walk(path_1):
 #     for filename in files:
 #         newname = "0_{}.jpg".format(id)
@@ -26,19 +27,18 @@ IMG_SIZE = 32
 #         id+=1
 #         os.rename(path_3 + "\\" + filename, path_t + "\\" + newname)
 
-#
+# resize the training images
 # for filename in os.listdir(path_t):
 #     print(filename)
 #     path= "data"+ "\\" +filename
 #     img = cv2.imread(path)
-#
 #     img = cv2.resize(img, (IMG_SIZE, IMG_SIZE))
-#     cv2.imwrite("data_m"+ "\\"+filename,img)
+#     cv2.imwrite("resize_data"+ "\\"+filename,img)
 
+# resize the test images
 # for filename in os.listdir("test"):
 #     print(filename)
 #     path= "test"+ "\\" +filename
 #     img = cv2.imread(path)
-#
 #     img = cv2.resize(img, (IMG_SIZE, IMG_SIZE))
-#     cv2.imwrite("test_s"+ "\\"+filename,img)
+#     cv2.imwrite("resize_test"+ "\\"+filename,img)
