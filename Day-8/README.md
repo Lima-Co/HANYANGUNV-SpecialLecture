@@ -22,6 +22,15 @@ python generate_vocab.py < data\train.rep > data\vocab.rep
 
 ## 데이터 학습
 
+### 학습 절차
+
+1. 데이터를 편집합니다.
+    1. 학습용 데이터(train.req, train.rep)
+    1. 검증용 데이터(dev.req, dev.rep)
+    1. 최종 테스트용 데이터(test.req, test.rep)
+1. 단어집을 생성합니다.
+1. 학습을 실행합니다.
+
 ### 학습 명령어
 
 학습 시간을 줄이기 위해 학습 횟수(num_train_steps)를 12000에서 3000으로 줄였습니다.
